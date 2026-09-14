@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Installments Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="carCalculator">
+
+        <h1>Car Installments Calculator</h1>
+
+        <label>Car Type</label>
+        <input type="text" id="carType" placeholder="Enter car type">
+
+        <label>Car Model</label>
+        <input type="text" id="carModel" placeholder="Enter car model">
+
+        <label>Car Price</label>
+        <input type="number" id="carPrice" placeholder="Enter car price">
+
+        <label>Down Payment</label>
+        <input type="number" id="downPayment" placeholder="Enter down payment">
+
+        <label>Installment Duration</label>
+
+        <select id="years">
+            <option value="#">Select Duration</option>
+            <option value="1">1 Year</option>
+            <option value="2">2 Years</option>
+            <option value="3">3 Years</option>
+            <option value="4">4 Years</option>
+            <option value="5">5 Years</option>
+            <option value="7">7 Years</option>
+        </select>
+
+        <button onclick="calculate()">Calculate</button>
+
+        <h2 id="monthlyInstallment">Monthly Installment: --</h2>
+
+        <h2 id="interestRate">Interest Rate: --</h2>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
